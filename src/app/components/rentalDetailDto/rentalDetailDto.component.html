@@ -1,1 +1,26 @@
-<p>rental-detail-dto works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Brand</th>
+            <th>Color</th>
+            <th>Model</th>
+            <th>RentDate</th>
+            <th>ReturnDate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let rentalDetailDto of rentalDetailDtos">
+            <td>{{rentalDetailDto.id}}</td>
+            <td>{{rentalDetailDto.customerName}}</td>
+            <td>{{rentalDetailDto.customerLastname}}</td>
+            <td>{{rentalDetailDto.brandName}}</td>
+            <td>{{rentalDetailDto.colorName}}</td>
+            <td>{{rentalDetailDto.modelName}}</td>
+            <td>{{rentalDetailDto.rentDate}}</td>
+            <td>{{rentalDetailDto.returnDate}}</td>
+        </tr>
+    </tbody>
+</table>
