@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RentalDetailDtoComponent } from './rental-detail-dto.component';
+import { RentalDetailDtoComponent } from './rentalDetailDto.component';
 
 describe('RentalDetailDtoComponent', () => {
   let component: RentalDetailDtoComponent;

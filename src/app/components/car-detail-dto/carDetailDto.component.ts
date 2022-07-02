@@ -3,8 +3,8 @@ import { CarDetailDto } from 'src/app/models/carDetailDto';
 
 @Component({
   selector: 'app-car-detail-dto',
-  templateUrl: './car-detail-dto.component.html',
-  styleUrls: ['./car-detail-dto.component.css']
+  templateUrl: './carDetailDto.component.html',
+  styleUrls: ['./carDetailDto.component.css']
 })
 export class CarDetailDtoComponent implements OnInit {
   carDetailDtos:CarDetailDto[] = [];
