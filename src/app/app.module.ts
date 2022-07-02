@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { CarComponent } from './components/car/car.component';
+import { CarDetailDtoComponent } from './components/car-detail-dto/car-detail-dto.component';
+import { RentalDetailDtoComponent } from './components/rental-detail-dto/rental-detail-dto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NaviComponent,
     BrandComponent,
-    CarComponent
+    CarComponent,
+    CarDetailDtoComponent,
+    RentalDetailDtoComponent
   ],
   imports: [
     BrowserModule,
