@@ -1,10 +1,10 @@
 export interface RentalDetailDto{
-    Id:number;
-    CustomerName:string;
-    CustomerLastname:string;
-    BrandName:string;
-    ColorName:string;
-    ModelName:string;
-    RentDate:Date;
-    ReturnDate:Date;
+    id:number;
+    customerName:string;
+    customerLastname:string;
+    brandName:string;
+    colorName:string;
+    modelName:string;
+    rentDate:Date;
+    returnDate:Date;
 }

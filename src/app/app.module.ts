@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { NaviComponent } from './components/navi/navi.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { CarComponent } from './components/car/car.component';
-import { CarDetailDtoComponent } from './components/car-detail-dto/carDetailDto.component';
-import { RentalDetailDtoComponent } from './components/rental-detail-dto/rentalDetailDto.component';
+import { CarDetailDtoComponent } from './components/carDetailDto/carDetailDto.component';
+import { RentalDetailDtoComponent } from './components/rentalDetailDto/rentalDetailDto.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { RentalDetailDtoComponent } from './components/rental-detail-dto/rentalD
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
