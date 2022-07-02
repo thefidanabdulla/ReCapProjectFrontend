@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RentalDetailDto } from 'src/app/models/rentalDetailDto/rentalDetailDto';
 
 @Component({
   selector: 'app-rentalDetailDto',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RentalDetailDtoComponent implements OnInit {
 
+  rentalDetailDtos:RentalDetailDto[] = [];
   constructor() { }
 
   ngOnInit(): void {

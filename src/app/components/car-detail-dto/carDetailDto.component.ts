@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CarDetailDto } from 'src/app/models/carDetailDto';
+import { CarDetailDto } from 'src/app/models/carDetailDto/carDetailDto';
 
 @Component({
-  selector: 'app-car-detail-dto',
+  selector: 'app-CarDetailDto',
   templateUrl: './carDetailDto.component.html',
   styleUrls: ['./carDetailDto.component.css']
 })
@@ -11,6 +11,7 @@ export class CarDetailDtoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

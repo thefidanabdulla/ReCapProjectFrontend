@@ -20,7 +20,8 @@ import { RentalDetailDtoComponent } from './components/rental-detail-dto/rentalD
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
