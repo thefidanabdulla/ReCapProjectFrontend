@@ -2,6 +2,7 @@
 <ul class="list-group">
   <li 
     *ngFor="let color of colors" 
+    routerLink="/cardetails/color/{{color.id}}"
     [class]="getCurrentBrandClass(color)"
     (click) = 'setCurrentBrand(color)'
   >

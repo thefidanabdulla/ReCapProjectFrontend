@@ -5,7 +5,11 @@ import { CarDetailDtoComponent } from './components/carDetailDto/carDetailDto.co
 
 const routes: Routes = [
   { path:'', pathMatch:'full',  component:CarDetailDtoComponent },
-  { path:'cars',  component:CarComponent  }
+  { path:'cardetails',  component:CarDetailDtoComponent },
+  { path:'cardetails/brand/:brandId',  component:CarDetailDtoComponent  },
+  {path:"cardetails/color/:colorId/brand/:brandId", component:CarDetailDtoComponent},
+  { path:'cardetails/color/:colorId',  component:CarDetailDtoComponent  },
+  { path:'cars',  component:CarComponent  },
 ];
 
 @NgModule({
