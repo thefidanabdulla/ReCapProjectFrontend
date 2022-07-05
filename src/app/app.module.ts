@@ -9,6 +9,7 @@ import { CarComponent } from './components/car/car.component';
 import { CarDetailDtoComponent } from './components/carDetailDto/carDetailDto.component';
 import { RentalDetailDtoComponent } from './components/rentalDetailDto/rentalDetailDto.component';
 import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {HttpClientModule} from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
