@@ -1,5 +1,12 @@
 <div class="bg-secondary text-white btn w-100 mt-1 mb-1">Colors</div>
 <ul class="list-group">
+    <li 
+    routerLink="/cardetails"
+    [class]="getAllColorClass()"
+    (click) = "clearCurrentColor()"
+  >
+  All Colors
+  </li>
   <li 
     *ngFor="let color of colors" 
     routerLink="/cardetails/color/{{color.id}}"
@@ -9,4 +16,3 @@
     {{color.colorName}}
   </li>
 </ul>
-<h2 *ngIf="currentColor">{{currentColor.colorName}} secdiniz</h2>

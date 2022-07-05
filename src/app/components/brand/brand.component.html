@@ -1,6 +1,13 @@
 <div class="bg-secondary text-white btn w-100 mt-1 mb-1">Brands</div>
 <ul class="list-group">
   <li 
+    routerLink="/cardetails"
+    [class]="getAllBrandClass()"
+    (click) = "clearCurrentBrand()"
+  >
+  All Cars
+  </li>
+  <li 
     *ngFor="let brand of brands" 
     routerLink="/cardetails/brand/{{brand.id}}"
     [class]="getCurrentBrandClass(brand)"
@@ -9,4 +16,3 @@
     {{brand.brandName}}
   </li>
 </ul>
-<h2 *ngIf="currentBrand">{{currentBrand.brandName}} secdiniz</h2>
