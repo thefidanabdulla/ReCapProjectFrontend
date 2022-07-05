@@ -1,4 +1,11 @@
 <div class="bg-secondary text-white btn w-100 mt-1 mb-1">Brands</div>
 <ul class="list-group">
-  <li *ngFor="let brand of brands" class="list-group-item">{{brand.brandName}}</li>
+  <li 
+    *ngFor="let brand of brands" 
+    [class]="getCurrentBrandClass(brand)"
+    (click) = 'setCurrentBrand(brand)'
+  >
+    {{brand.brandName}}
+  </li>
 </ul>
+<h2 *ngIf="currentBrand">{{currentBrand.brandName}} secdiniz</h2>
