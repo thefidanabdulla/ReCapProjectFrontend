@@ -9,7 +9,8 @@ import { CarComponent } from './components/car/car.component';
 import { CarDetailDtoComponent } from './components/carDetailDto/carDetailDto.component';
 import { RentalDetailDtoComponent } from './components/rentalDetailDto/rentalDetailDto.component';
 import {HttpClientModule} from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ColorComponent } from './components/color/color.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     BrandComponent,
     CarComponent,
     CarDetailDtoComponent,
-    RentalDetailDtoComponent
+    RentalDetailDtoComponent,
+    ColorComponent
   ],
   imports: [
     BrowserModule,
