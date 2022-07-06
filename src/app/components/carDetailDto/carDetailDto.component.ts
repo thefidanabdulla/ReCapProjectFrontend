@@ -11,7 +11,6 @@ import { CarDetailDtoService } from 'src/app/services/carDetailDto/carDetailDto.
 export class CarDetailDtoComponent implements OnInit {
 
   carDetailDtos:CarDetailDto[] = [];
-  imagePath:string;
   dataLoaded =  false;
   constructor(
     private carDetailDtoService:CarDetailDtoService,
@@ -61,5 +60,4 @@ export class CarDetailDtoComponent implements OnInit {
       this.dataLoaded = true;
     })
   }
-  
 }
