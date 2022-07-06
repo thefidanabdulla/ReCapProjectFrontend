@@ -11,14 +11,15 @@ import { CarDetailDtoService } from 'src/app/services/carDetailDto/carDetailDto.
 export class CarDetailDtoComponent implements OnInit {
 
   carDetailDtos:CarDetailDto[] = [];
+  oneCarDetailDto:CarDetailDto;
   dataLoaded =  false;
+  crId:number = 2;
   constructor(
     private carDetailDtoService:CarDetailDtoService,
     private activatedRoute:ActivatedRoute
   ) { }
 
   ngOnInit(): void {
-    
     this.activatedRoute.params.subscribe(params=>{
       if(params["colorId"] && params["brandId"]){
         this.getCarDetailByColorAndByBrand(params["colorId"],params["brandId"])
@@ -57,6 +58,13 @@ export class CarDetailDtoComponent implements OnInit {
   getCarDetailByColorAndByBrand(colorId:number,  brandId:number){
     this.carDetailDtoService.getCarDetailByColorAndByBrand(colorId, brandId).subscribe(response => {
       this.carDetailDtos = response.data;
+      this.dataLoaded = true;
+    })
+  }
+  getCarDetailByCarId(carId:number){
+    this.carDetailDtoService.getCarDetailByCarId(carId).subscribe(response => {
+      this.oneCarDetailDto = response;
+      console.log(response)
       this.dataLoaded = true;
     })
   }
