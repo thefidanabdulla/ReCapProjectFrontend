@@ -11,6 +11,8 @@ import { RentalDetailDtoComponent } from './components/rentalDetailDto/rentalDet
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ColorComponent } from './components/color/color.component';
+import { OneCarDetailComponent } from './components/oneCarDetail/oneCarDetail.component';
+import { CarImageComponent } from './components/carImage/carImage.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { ColorComponent } from './components/color/color.component';
     CarDetailDtoComponent,
     RentalDetailDtoComponent,
     ColorComponent,
+    OneCarDetailComponent,
+    CarImageComponent,
   ],
   imports: [
     BrowserModule,

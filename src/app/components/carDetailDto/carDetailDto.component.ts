@@ -61,11 +61,5 @@ export class CarDetailDtoComponent implements OnInit {
       this.dataLoaded = true;
     })
   }
-  getCarDetailByCarId(carId:number){
-    this.carDetailDtoService.getCarDetailByCarId(carId).subscribe(response => {
-      this.oneCarDetailDto = response;
-      console.log(response)
-      this.dataLoaded = true;
-    })
-  }
+  
 }
