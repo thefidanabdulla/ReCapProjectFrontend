@@ -40,6 +40,7 @@ export class CarDetailDtoComponent implements OnInit {
   getCarDetailDto(){
     this.carDetailDtoService.getCarDetailDto().subscribe(response => {
       this.carDetailDtos = response.data;
+      console.log(response)
       this.dataLoaded = true;
     })
   }
