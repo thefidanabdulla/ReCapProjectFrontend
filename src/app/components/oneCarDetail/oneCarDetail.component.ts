@@ -10,7 +10,7 @@ import { CarDetailDtoService } from 'src/app/services/carDetailDto/carDetailDto.
 })
 export class OneCarDetailComponent implements OnInit {
 
-  oneCarDetailDto:CarDetailDto;
+  oneCarDetailDto:CarDetailDto[] = [];
   dataLoaded =  false;
   constructor(
     private carDetailDtoService:CarDetailDtoService,
@@ -26,8 +26,8 @@ export class OneCarDetailComponent implements OnInit {
 
   getCarDetailByCarId(carId:number){
     this.carDetailDtoService.getCarDetailByCarId(carId).subscribe(response => {
-      this.oneCarDetailDto = response;
-      console.log(this.oneCarDetailDto)
+      this.oneCarDetailDto = response.data;
+      console.log(this.oneCarDetailDto[0])
       this.dataLoaded = true;
     })
   }
