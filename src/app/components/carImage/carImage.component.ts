@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-car-image',
+  selector: 'app-carImage',
   templateUrl: './carImage.component.html',
   styleUrls: ['./carImage.component.css']
 })
